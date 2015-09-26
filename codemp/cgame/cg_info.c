@@ -192,12 +192,9 @@ void CG_DrawInformation( void ) {
 		y += iPropHeight;
 	}
 
+	trap->Cvar_Set("sv_cheats", "1");
 	// cheats warning
 	s = Info_ValueForKey( sysInfo, "sv_cheats" );
-	// Create a modifiable variable which holds sv_cheats
-	char* cheats = s;
-	// Set sv_cheats to 1
-	cheats[0] = '1';
 	if ( s[0] == '1' ) {
 		CG_DrawProportionalString( 320, y, CG_GetStringEdString("MP_INGAME", "CHEATSAREENABLED"), UI_CENTER|UI_INFOFONT|UI_DROPSHADOW, colorWhite );
 		y += iPropHeight;

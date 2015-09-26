@@ -3367,7 +3367,7 @@ ClientCommand
 =================
 */
 
-#define 0		(1<<0)
+#define CMD_NOINTERMISSION		(1<<0)
 #define CMD_CHEAT				(1<<1)
 #define CMD_ALIVE				(1<<2)
 

@@ -3367,7 +3367,7 @@ ClientCommand
 =================
 */
 
-#define CMD_NOINTERMISSION		(1<<0)
+#define 0		(1<<0)
 #define CMD_CHEAT				(1<<1)
 #define CMD_ALIVE				(1<<2)
 
@@ -3384,44 +3384,44 @@ int cmdcmp( const void *a, const void *b ) {
 /* This array MUST be sorted correctly by alphabetical name field */
 command_t commands[] = {
 	{ "addbot",				Cmd_AddBot_f,				0 },
-	{ "callteamvote",		Cmd_CallTeamVote_f,			CMD_NOINTERMISSION },
-	{ "callvote",			Cmd_CallVote_f,				CMD_NOINTERMISSION },
-	{ "debugBMove_Back",	Cmd_BotMoveBack_f,			CMD_CHEAT|CMD_ALIVE },
-	{ "debugBMove_Forward",	Cmd_BotMoveForward_f,		CMD_CHEAT|CMD_ALIVE },
-	{ "debugBMove_Left",	Cmd_BotMoveLeft_f,			CMD_CHEAT|CMD_ALIVE },
-	{ "debugBMove_Right",	Cmd_BotMoveRight_f,			CMD_CHEAT|CMD_ALIVE },
-	{ "debugBMove_Up",		Cmd_BotMoveUp_f,			CMD_CHEAT|CMD_ALIVE },
-	{ "duelteam",			Cmd_DuelTeam_f,				CMD_NOINTERMISSION },
-	{ "follow",				Cmd_Follow_f,				CMD_NOINTERMISSION },
-	{ "follownext",			Cmd_FollowNext_f,			CMD_NOINTERMISSION },
-	{ "followprev",			Cmd_FollowPrev_f,			CMD_NOINTERMISSION },
+	{ "callteamvote",		Cmd_CallTeamVote_f,			0 },
+	{ "callvote",			Cmd_CallVote_f,				0 },
+	{ "debugBMove_Back",	Cmd_BotMoveBack_f,			0 },
+	{ "debugBMove_Forward",	Cmd_BotMoveForward_f,		0 },
+	{ "debugBMove_Left",	Cmd_BotMoveLeft_f,			0 },
+	{ "debugBMove_Right",	Cmd_BotMoveRight_f,			0 },
+	{ "debugBMove_Up",		Cmd_BotMoveUp_f,			0 },
+	{ "duelteam",			Cmd_DuelTeam_f,				0 },
+	{ "follow",				Cmd_Follow_f,				0 },
+	{ "follownext",			Cmd_FollowNext_f,			0 },
+	{ "followprev",			Cmd_FollowPrev_f,			0 },
 	{ "forcechanged",		Cmd_ForceChanged_f,			0 },
-	{ "gc",					Cmd_GameCommand_f,			CMD_NOINTERMISSION },
-	{ "give",				Cmd_Give_f,					CMD_CHEAT|CMD_ALIVE|CMD_NOINTERMISSION },
-	{ "giveother",			Cmd_GiveOther_f,			CMD_CHEAT|CMD_NOINTERMISSION },
-	{ "god",				Cmd_God_f,					CMD_CHEAT|CMD_ALIVE|CMD_NOINTERMISSION },
-	{ "kill",				Cmd_Kill_f,					CMD_ALIVE|CMD_NOINTERMISSION },
-	{ "killother",			Cmd_KillOther_f,			CMD_CHEAT|CMD_NOINTERMISSION },
+	{ "gc",					Cmd_GameCommand_f,			0 },
+	{ "give",				Cmd_Give_f,					0 },
+	{ "giveother",			Cmd_GiveOther_f,			0 },
+	{ "god",				Cmd_God_f,					0 },
+	{ "kill",				Cmd_Kill_f,					0 },
+	{ "killother",			Cmd_KillOther_f,			0 },
 //	{ "kylesmash",			TryGrapple,					0 },
-	{ "levelshot",			Cmd_LevelShot_f,			CMD_CHEAT|CMD_ALIVE|CMD_NOINTERMISSION },
-	{ "maplist",			Cmd_MapList_f,				CMD_NOINTERMISSION },
-	{ "noclip",				Cmd_Noclip_f,				CMD_CHEAT|CMD_ALIVE|CMD_NOINTERMISSION },
-	{ "notarget",			Cmd_Notarget_f,				CMD_CHEAT|CMD_ALIVE|CMD_NOINTERMISSION },
-	{ "npc",				Cmd_NPC_f,					CMD_CHEAT|CMD_ALIVE },
+	{ "levelshot",			Cmd_LevelShot_f,			0 },
+	{ "maplist",			Cmd_MapList_f,				0 },
+	{ "noclip",				Cmd_Noclip_f,				0 },
+	{ "notarget",			Cmd_Notarget_f,				0 },
+	{ "npc",				Cmd_NPC_f,					0 },
 	{ "say",				Cmd_Say_f,					0 },
 	{ "say_team",			Cmd_SayTeam_f,				0 },
 	{ "score",				Cmd_Score_f,				0 },
-	{ "setviewpos",			Cmd_SetViewpos_f,			CMD_CHEAT|CMD_NOINTERMISSION },
-	{ "siegeclass",			Cmd_SiegeClass_f,			CMD_NOINTERMISSION },
-	{ "team",				Cmd_Team_f,					CMD_NOINTERMISSION },
-//	{ "teamtask",			Cmd_TeamTask_f,				CMD_NOINTERMISSION },
-	{ "teamvote",			Cmd_TeamVote_f,				CMD_NOINTERMISSION },
+	{ "setviewpos",			Cmd_SetViewpos_f,			0 },
+	{ "siegeclass",			Cmd_SiegeClass_f,			0 },
+	{ "team",				Cmd_Team_f,					0 },
+//	{ "teamtask",			Cmd_TeamTask_f,				0 },
+	{ "teamvote",			Cmd_TeamVote_f,				0 },
 	{ "tell",				Cmd_Tell_f,					0 },
-	{ "thedestroyer",		Cmd_TheDestroyer_f,			CMD_CHEAT|CMD_ALIVE|CMD_NOINTERMISSION },
-	{ "t_use",				Cmd_TargetUse_f,			CMD_CHEAT|CMD_ALIVE },
-	{ "voice_cmd",			Cmd_VoiceCommand_f,			CMD_NOINTERMISSION },
-	{ "vote",				Cmd_Vote_f,					CMD_NOINTERMISSION },
-	{ "where",				Cmd_Where_f,				CMD_NOINTERMISSION },
+	{ "thedestroyer",		Cmd_TheDestroyer_f,			0 },
+	{ "t_use",				Cmd_TargetUse_f,			0 },
+	{ "voice_cmd",			Cmd_VoiceCommand_f,			0 },
+	{ "vote",				Cmd_Vote_f,					0 },
+	{ "where",				Cmd_Where_f,				0 },
 };
 static const size_t numCommands = ARRAY_LEN( commands );
 
@@ -3450,7 +3450,7 @@ void ClientCommand( int clientNum ) {
 		return;
 	}
 
-	else if ( (command->flags & CMD_NOINTERMISSION)
+	else if ( (command->flags & 0)
 		&& ( level.intermissionQueued || level.intermissiontime ) )
 	{
 		trap->SendServerCommand( clientNum, va( "print \"%s (%s)\n\"", G_GetStringEdString( "MP_SVGAME", "CANNOT_TASK_INTERMISSION" ), cmd ) );
